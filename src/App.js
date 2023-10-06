@@ -6,7 +6,7 @@ function App() {
   const [selectedYear, setSelectedYear] = useState(null);
 
   const handleYearSelected = (year) => {
-    setSelectedYear(year);
+    setSelectedYear(year); // Update the selectedYear state
   };
 
   return (
