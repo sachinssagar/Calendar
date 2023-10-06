@@ -1,4 +1,5 @@
 import React from "react";
+import "./CalendarPage.css";
 
 const CalendarPage = ({ year }) => {
   const generateMonths = () => {

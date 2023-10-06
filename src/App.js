@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import YearInputPage from "./Component/YearInputPage";
 import CalendarPage from "./Component/CalendarPage";
+import "./App.css";
 
 function App() {
   const [selectedYear, setSelectedYear] = useState(null);
