@@ -15,7 +15,7 @@
 }
 
 .year-calendar input[type="number"] {
-  width: 100px;
+  width: auto;
   padding: 10px;
   border: 1px solid #ccc;
   border-radius: 4px;
@@ -38,8 +38,14 @@
   background-color: #0056b3;
 }
 
-.year-calendar .month-calendar {
+.year-calendar .calendar-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 3 columns */
+  gap: 20px; /* Gap between months */
   margin-top: 20px;
+}
+
+.year-calendar .month-calendar {
   border: 1px solid #ccc;
   border-radius: 4px;
   padding: 10px;
