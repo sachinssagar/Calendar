@@ -24,8 +24,6 @@ const MonthCalendar = () => {
   };
 
   const generateMonthCalendar = () => {
-    const calendarsArray = [];
-
     // Check if year and month are valid
     if (!year || !month || year.length !== 4 || !(month >= 1 && month <= 12)) {
       setMonthError(
@@ -34,6 +32,11 @@ const MonthCalendar = () => {
       setShowCalendar(false);
       return;
     }
+
+    const calendarsArray = [];
+
+    // Clear the previous calendar data
+    setCalendar([]);
 
     const date = new Date(year, month - 1, 1); // Subtract 1 from month since it's zero-based
     const monthName = date.toLocaleString("default", { month: "long" });
