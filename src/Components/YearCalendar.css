@@ -1,0 +1,35 @@
+/* YearCalendar.css */
+.year-calendar {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.month-calendar {
+  display: inline-block;
+  margin: 20px;
+  padding: 20px;
+  border: 1px solid #ccc;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+th,
+td {
+  padding: 10px;
+  text-align: center;
+  border: 1px solid #ccc;
+}
+
+thead {
+  background-color: #f0f0f0;
+}
+
+td.empty-cell {
+  background-color: #f0f0f0;
+}
+
+/* Add any additional styles as needed */

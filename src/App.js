@@ -1,23 +1,22 @@
-import React, { useState } from "react";
-import YearInputPage from "./Component/YearInputPage";
-import CalendarPage from "./Component/CalendarPage";
-import "./App.css";
+// App.js
+
+import React from "react";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import Home from "./Components/Home";
+import MonthView from "./Components/MonthView";
+import Navbar from "./Components/Navbar";
+import YearView from "./Components/YearView";
 
 function App() {
-  const [selectedYear, setSelectedYear] = useState(null);
-
-  const handleYearSelected = (year) => {
-    setSelectedYear(year); // Update the selectedYear state
-  };
-
   return (
-    <div className="App">
-      {selectedYear === null ? (
-        <YearInputPage onNext={handleYearSelected} />
-      ) : (
-        <CalendarPage year={selectedYear} />
-      )}
-    </div>
+    <Router>
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/year" element={<YearView />} />
+        <Route path="/month" element={<MonthView />} />
+      </Routes>
+    </Router>
   );
 }
 
