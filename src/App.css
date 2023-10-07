@@ -1,0 +1,85 @@
+/* Add some global styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f5f5f5;
+}
+
+/* Style the navigation bar */
+.navbar {
+  background-color: #333;
+  color: white;
+  padding: 1rem;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  margin-right: 1rem;
+}
+
+.navbar a:hover {
+  text-decoration: underline;
+}
+
+/* Style the main content container */
+.content-container {
+  padding: 1rem;
+}
+
+/* Style the Home component */
+.home {
+  background-color: #fff;
+  padding: 1rem;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Style the YearCalendar component */
+.year-calendar {
+  background-color: #fff;
+  padding: 1rem;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Style the MonthView component */
+.month-view {
+  background-color: #fff;
+  padding: 1rem;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Style links and buttons */
+a {
+  text-decoration: none;
+  color: #007bff;
+}
+
+button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Style headings */
+h1 {
+  font-size: 24px;
+}
+
+h2 {
+  font-size: 20px;
+  margin-top: 1rem;
+}
+
+/* Add responsive styles if needed */
+@media (max-width: 768px) {
+  .content-container {
+    padding: 0.5rem;
+  }
+}

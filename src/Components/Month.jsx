@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./MonthCalendar.css";
+import "./Month.css";
 
 const MonthCalendar = () => {
   const [year, setYear] = useState("");
@@ -25,11 +25,20 @@ const MonthCalendar = () => {
 
   const generateMonthCalendar = () => {
     const calendarsArray = [];
+
+    // Check if year and month are valid
+    if (!year || !month || year.length !== 4 || !(month >= 1 && month <= 12)) {
+      setMonthError(
+        "Please enter a valid 4-digit year and a month between 1 and 12."
+      );
+      setShowCalendar(false);
+      return;
+    }
+
     const date = new Date(year, month - 1, 1); // Subtract 1 from month since it's zero-based
     const monthName = date.toLocaleString("default", { month: "long" });
 
     for (let i = 0; i < 1; i++) {
-      // You can modify this loop to display multiple months if needed
       const monthCalendar = generateMonthTable(date);
 
       calendarsArray.push(
