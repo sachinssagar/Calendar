@@ -49,7 +49,6 @@ const MonthCalendar = () => {
         {monthCalendar}
       </div>,
     ]);
-
     setShowCalendar(true);
   };
 
