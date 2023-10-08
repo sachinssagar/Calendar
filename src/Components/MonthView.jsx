@@ -34,18 +34,12 @@ function CalendarApp() {
     (_, index) => index + 1
   );
 
-  const emptyDaysBefore = Array.from(
-    { length: firstDayOfWeek },
-    (_, index) => null
-  );
+  const emptyDaysBefore = Array.from({ length: firstDayOfWeek });
 
   const totalDays = emptyDaysBefore.length + currentMonthDays.length;
   const remainingDays = 42 - totalDays;
 
-  const emptyDaysAfter = Array.from(
-    { length: remainingDays },
-    (_, index) => null
-  );
+  const emptyDaysAfter = Array.from({ length: remainingDays });
 
   const daysMatrix = [
     ...emptyDaysBefore,
